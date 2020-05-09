@@ -1,4 +1,4 @@
-# A QUIC implementation in pure Go
+# PStream implementation based on the [MPQUIC](https://github.com/qdeconinck/mp-quic) project
 
 **Please read https://multipath-quic.org/2017/12/09/artifacts-available.html to figure out how to setup the code.**
 
@@ -9,12 +9,6 @@
 [![Windows Build Status](https://img.shields.io/appveyor/ci/lucas-clemente/pstream/master.svg?style=flat-square&label=windows+build)](https://ci.appveyor.com/project/lucas-clemente/pstream/branch/master)
 [![Code Coverage](https://img.shields.io/codecov/c/github/lucas-clemente/pstream/master.svg?style=flat-square)](https://codecov.io/gh/lucas-clemente/pstream/)
 
-pstream is an implementation of the [QUIC](https://en.wikipedia.org/wiki/QUIC) protocol in Go.
-
-## Roadmap
-
-pstream is compatible with the current version(s) of Google Chrome and QUIC as deployed on Google's servers. We're actively tracking the development of the Chrome code to ensure compatibility as the protocol evolves. In that process, we're dropping support for old QUIC versions.
-As Google's QUIC versions are expected to converge towards the [IETF QUIC draft](https://github.com/quicwg/base-drafts), pstream will eventually implement that draft.
 
 ## Guides
 
@@ -69,6 +63,4 @@ http.Client{
 }
 ```
 
-## Contributing
 
-We are always happy to welcome new contributors! We have a number of self-contained issues that are suitable for first-time contributors, they are tagged with [want-help](https://github.com/lucas-clemente/pstream/issues?q=is%3Aopen+is%3Aissue+label%3Awant-help). If you have any questions, please feel free to reach out by opening an issue or leaving a comment.
